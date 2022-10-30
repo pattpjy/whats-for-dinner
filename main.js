@@ -12,6 +12,7 @@ var cookBtn = document.querySelector('#cook')
 var foodItem = document.getElementById('food-item')
 var showFoodSl = document.querySelector('.food-idea')
 var crocpotBox = document.querySelector('.svg')
+var clearBtn = document.querySelector('#clear')
 
 //eventslisterner 
 
@@ -20,6 +21,12 @@ cookBtn.addEventListener('click',function(){
     swap();
     letsCook();
  })
+
+clearBtn.addEventListener('click',clearBox )
+function clearBox(){
+   showFoodSl.style.display = 'none'
+   crocpotBox.style.display = 'inline'
+}
 
  function letsCook(){
     var sideId = getRandomIndex(sideDish)
