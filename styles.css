@@ -66,6 +66,15 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.food-idea{
+    background-color:rgba(225, 225, 225, .9);
+    height: 200px;
+    width: 300px;
+    padding: 50px;
+    display: none;
+    position: relative; 
+
+}
 
 .svg {
     background-color: rgba(225, 225, 225, .9);

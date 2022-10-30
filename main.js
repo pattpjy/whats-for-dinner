@@ -17,7 +17,7 @@ var crocpotBox = document.querySelector('.svg')
 
 //when click button with chosen radio, it randomly select things in the radio array, and display the text in the crocpot box
 cookBtn.addEventListener('click',function(){
-    // swap();
+    swap();
     letsCook();
  })
 
@@ -40,3 +40,8 @@ cookBtn.addEventListener('click',function(){
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length)
  }
+ function swap(){
+    showFoodSl.style.display = 'inline'
+    crocpotBox.style.display = 'none'
+ }
+ 
