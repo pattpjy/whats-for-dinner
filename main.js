@@ -12,6 +12,7 @@ var cookBtn = document.querySelector('#cook')
 var foodItem = document.getElementById('food-item')
 var showFoodSl = document.querySelector('.food-idea')
 var crocpotBox = document.querySelector('.svg')
+var clearBtn = document.querySelector('#clear')
 
 //eventslisterner 
 
@@ -20,6 +21,12 @@ cookBtn.addEventListener('click',function(){
     swap();
     letsCook();
  })
+
+clearBtn.addEventListener('click',clearBox )
+function clearBox(){
+   showFoodSl.style.display = 'none'
+   crocpotBox.style.display = 'inline'
+}
 
  function letsCook(){
     var sideId = getRandomIndex(sideDish)
@@ -35,7 +42,11 @@ cookBtn.addEventListener('click',function(){
           foodItem.innerText = dessertDish[dessertId];
         } else if(slMeal.checked === true){
         foodItem.innerText = `${mainDish[mainId]} with a side of ${sideDish[sideId]} and ${dessertDish[dessertId]} for dessert!`
-        }
+        } else{
+         showFoodSl.style.display = 'none'
+         crocpotBox.style.display = 'inline'
+         alert('Please make your choice')
+       }
 }
 
 //function
