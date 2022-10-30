@@ -66,6 +66,23 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+#clear{
+    
+    background-color: #95a5a6;
+    border: 0px;
+    border-radius: 4px;
+    font-family:'Roboto', sans-serif;
+    font-size: 8px;
+    margin-top: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}
 .food-idea{
     background-color:rgba(225, 225, 225, .9);
     height: 200px;
