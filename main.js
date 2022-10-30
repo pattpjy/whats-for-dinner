@@ -42,7 +42,11 @@ function clearBox(){
           foodItem.innerText = dessertDish[dessertId];
         } else if(slMeal.checked === true){
         foodItem.innerText = `${mainDish[mainId]} with a side of ${sideDish[sideId]} and ${dessertDish[dessertId]} for dessert!`
-        }
+        } else{
+         showFoodSl.style.display = 'none'
+         crocpotBox.style.display = 'inline'
+         alert('Please make your choice')
+       }
 }
 
 //function
