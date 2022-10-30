@@ -33,7 +33,9 @@ cookBtn.addEventListener('click',function(){
           foodItem.innerText = mainDish[mainId];
        }else if(slDessert.checked === true){
           foodItem.innerText = dessertDish[dessertId];
-    } 
+        } else if(slMeal.checked === true){
+        foodItem.innerText = `${mainDish[mainId]} with a side of ${sideDish[sideId]} and ${dessertDish[dessertId]} for dessert!`
+        }
 }
 
 //function
